@@ -1,4 +1,4 @@
-# PaneraBreadCucumberExample
+# Cucumber 8 JVM, Spring dependency injection
 This is an example maven framework project demonstrating, the use of Springs dependency injection with Selenium-Webdriver/ cucumber. Using system properties to run either Desktop or Mobile specfic tests.
 
 <h2>Dependency Injection</h2>
@@ -17,4 +17,5 @@ To run with Chrome Android 8.0.0 emulation:<br/>
 mvn clean test -Dweb.browser=chrome -Dspring.profiles.active=desktop
 ```
 The end of the test run a report is generated in root named `report` this can be opened in any browser.
+
 
