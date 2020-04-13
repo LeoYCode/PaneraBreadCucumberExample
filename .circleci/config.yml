@@ -1,0 +1,18 @@
+version: 2.1
+
+jobs:
+  build:
+    working_directory: ~/circleci-panera-bread-cucumber-spring
+    docker:
+      - image:  circleci/openjdk:8u242-stretch-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: circleci-panera-bread-cucumber-spring-{{ checksum "pom.xml" }}
+      - run: mvn dependency:go-offline
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: circleci-panera-bread-cucumber-spring-{{ checksum "pom.xml" }}
+
+      - run: mvn package
