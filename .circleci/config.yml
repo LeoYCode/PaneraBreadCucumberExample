@@ -1,4 +1,11 @@
 version: 2.1
+orbs:
+  maven: drift/maven@0.1.6
+parameters:
+  build-flags:
+    type: string
+    description: Flags for mvn package / mvn deploy
+    default: '-Dweb.browser=chrome -Dspring.profiles.active=desktop'
 
 jobs:
   build:
@@ -14,5 +21,5 @@ jobs:
           paths:
             - ~/.m2
           key: circleci-panera-bread-cucumber-spring-{{ checksum "pom.xml" }}
-
       - run: mvn package
+
