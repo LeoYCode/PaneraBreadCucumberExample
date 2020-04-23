@@ -18,6 +18,6 @@ To run with Chrome Android 8.0.0 emulation:<br/>
 ```
 mvn clean test -Dweb.browser=chrome -Dspring.profiles.active=mobile
 ```
-Test run report is generated in root directory named `report` this can be opened in any browser.
+Test run report are generated in root directory named `report` this can be opened in any browser.
 
 
