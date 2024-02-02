@@ -14,7 +14,7 @@
         <cucumber.spring.version>5.5.0</cucumber.spring.version>
         <cucumber.junit.version>5.5.0</cucumber.junit.version>
         <selenium.java.version>3.141.59</selenium.java.version>
-        <spring.context.version>5.2.2.RELEASE</spring.context.version>
+        <spring.context.version>5.2.22.RELEASE</spring.context.version>
         <web.browser>chrome</web.browser>
     </properties>
 
